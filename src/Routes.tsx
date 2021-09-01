@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Home } from './pages/Home';
+import { Receitas } from './pages/Receitas';
 
 export function Routes() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path='/' component={Home} />
+        <Route exact path='/' component={Receitas} />
       </Switch>
     </BrowserRouter>
   );

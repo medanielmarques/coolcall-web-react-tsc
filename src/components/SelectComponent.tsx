@@ -1,4 +1,4 @@
-import { background, Select } from '@chakra-ui/react';
+import { Select } from '@chakra-ui/react';
 import { MdArrowDropDown } from 'react-icons/md';
 
 interface Item {

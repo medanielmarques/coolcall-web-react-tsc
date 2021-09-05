@@ -1,5 +1,6 @@
 import { Button } from '@chakra-ui/react';
 import { useState } from 'react';
+import Loader from 'react-loader-spinner';
 import { SelectComponent } from '../components/SelectComponent';
 
 import '../styles/receitas.styles.scss';
@@ -77,6 +78,7 @@ export function Receitas() {
           colorScheme='whiteAlpha'
           _hover={{ bg: '#293345' }}
           w='100%'
+          leftIcon={<Loader type='Bars' color='white' width='25' height='25' />}
         >
           Pesquisar
         </Button>

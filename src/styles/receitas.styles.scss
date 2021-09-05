@@ -1,0 +1,26 @@
+.container {
+  width: 800px;
+  margin: 20px auto 0 auto;
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .main {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+
+    .selectItens {
+      margin: 0 auto 20px auto;
+      display: grid;
+      grid-template-columns: repeat(2, 392.5px);
+      gap: 15px;
+
+      select option {
+        background: transparent;
+      }
+    }
+  }
+}

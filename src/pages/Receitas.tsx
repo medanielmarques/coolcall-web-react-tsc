@@ -2,7 +2,7 @@ import { Button } from '@chakra-ui/react';
 import { useState } from 'react';
 import { SelectComponent } from '../components/SelectComponent';
 
-import './styles.scss';
+import '../styles/receitas.styles.scss';
 
 interface Item {
   id: number;
@@ -20,14 +20,14 @@ export function Receitas() {
   const [ReceitaSelecionada, setReceitaSelecionada] = useState(0);
 
   const meses = [
-    { id: 1, label: 'janeiro' },
-    { id: 2, label: 'fevereiro' },
-    { id: 3, label: 'março' },
-    { id: 4, label: 'abril' },
-    { id: 5, label: 'maio' },
-    { id: 6, label: 'junho' },
-    { id: 7, label: 'julho' },
-    { id: 8, label: 'agosto' },
+    { id: 1, label: 'Janeiro' },
+    { id: 2, label: 'Fevereiro' },
+    { id: 3, label: 'Março' },
+    { id: 4, label: 'Abril' },
+    { id: 5, label: 'Maio' },
+    { id: 6, label: 'Junho' },
+    { id: 7, label: 'Julho' },
+    { id: 8, label: 'Agosto' },
   ];
 
   const quebras = [
@@ -47,31 +47,39 @@ export function Receitas() {
         <h1>Receitas - Portal de Guarulhos</h1>
         <div className='selectItens'>
           <SelectComponent
-            label='Mês inicial'
+            placeholder='Mês inicial*'
             itens={meses}
             setItem={setMesInicialSelecionado}
           />
 
           <SelectComponent
-            label='Mês final'
+            placeholder='Mês final*'
             itens={meses}
             setItem={setMesFinalSelecionado}
           />
 
           <SelectComponent
-            label='Selecione a Quebra'
+            placeholder='Selecione a Quebra*'
             itens={quebras}
             setItem={setQuebraSelecionada}
           />
 
           <SelectComponent
-            label='Tipo Receita'
+            placeholder='Tipo Receita*'
             itens={receitas}
             setItem={setReceitaSelecionada}
           />
         </div>
 
-        <Button variant='outline'> Pesquisar </Button>
+        <Button
+          variant='outline'
+          color='white'
+          colorScheme='whiteAlpha'
+          _hover={{ bg: '#293345' }}
+          w='100%'
+        >
+          Pesquisar
+        </Button>
       </div>
     </div>
   );

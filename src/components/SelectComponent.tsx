@@ -1,4 +1,5 @@
-import { Select } from '@chakra-ui/react';
+import { background, Select } from '@chakra-ui/react';
+import { MdArrowDropDown } from 'react-icons/md';
 
 interface Item {
   id: number;
@@ -7,26 +8,30 @@ interface Item {
 
 interface Props {
   itens: Item[];
-  label: string;
+  placeholder: string;
   setItem: React.Dispatch<React.SetStateAction<number>>;
 }
 
 export function SelectComponent(props: Props) {
-  const { itens, label, setItem } = props;
+  const { itens, placeholder, setItem } = props;
 
   const handleChange = (event: any) => {
     setItem(event.target.value);
   };
 
   return (
-    <>
-      <span>{label}</span>
-
-      <Select onChange={handleChange}>
+    <div>
+      <Select
+        onChange={handleChange}
+        placeholder={placeholder}
+        icon={<MdArrowDropDown />}
+        backgroundColor='#1a202c'
+        w='100%'
+      >
         {itens.map((item) => (
-          <option value={item.id}> {item.label} </option>
+          <option value={item.id}>{item.label}</option>
         ))}
       </Select>
-    </>
+    </div>
   );
 }

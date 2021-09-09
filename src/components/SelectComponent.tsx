@@ -2,7 +2,7 @@ import { Select } from '@chakra-ui/react';
 import { MdArrowDropDown } from 'react-icons/md';
 
 interface Item {
-  id: number;
+  id: string;
   label: string;
 }
 

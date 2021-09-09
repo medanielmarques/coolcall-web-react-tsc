@@ -1,35 +1,46 @@
+import { useEffect, useState } from 'react';
+import { RouteComponentProps } from 'react-router';
 import { Button, Center, Stack } from '@chakra-ui/react';
-import { useEffect } from 'react';
-import { useState } from 'react';
 import { MdFileDownload } from 'react-icons/md';
-import { api } from '../services/api';
+// import { api } from '../services/api';
 
 import '../styles/download.styles.scss';
 
-interface DownloadLinks {
-  pdf: string;
-  csv: string;
-  txt: string;
+interface MatchParams {
+  id: string;
+  municipio: string;
 }
 
-export function Download() {
-  const [downloadLinks, setDownloadLinks] = useState<DownloadLinks>();
+interface DownloadLinks {
+  fileType: string;
+  link: string;
+}
 
-  function handleClick(fileType: string) {}
+interface Props extends RouteComponentProps<MatchParams> {}
+
+export function Download({ match }: Props) {
+  const { id, municipio } = match.params;
+
+  const [downloadLinks, setDownloadLinks] = useState<DownloadLinks[]>([]);
 
   useEffect(() => {
-    api
-      .get('/guarulhos/receitas')
-      .then((response) => setDownloadLinks(response.data));
+    // api.get('/guarulhos/receitas');
+    // .then((response) => setDownloadLinks(response.data));
   }, [downloadLinks]);
 
   return (
     <Center className='container'>
-      <h1>Download - Receitas - Portal de Guarulhos</h1>
+      <h1>Download - Receitas - Portal de {municipio}</h1>
 
       <Stack direction='row' spacing='2'>
-        <Button variant='outline' leftIcon={<MdFileDownload />}>
-          PDF
+        <Button
+          variant='outline'
+          leftIcon={<MdFileDownload />}
+          textTransform='uppercase'
+        >
+          <a href='http://localhost:3333/files/receita.txt' download>
+            pdf
+          </a>
         </Button>
         <Button variant='outline' leftIcon={<MdFileDownload />}>
           CSV

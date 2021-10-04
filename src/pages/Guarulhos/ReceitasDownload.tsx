@@ -7,7 +7,7 @@ import 'styles/download.styles.scss';
 export function ReceitasDownload() {
   return (
     <Center className='container'>
-      <h1>Portal de Transparência de Guarulhos - Download das receitas</h1>
+      <h1>Portal da Transparência de Guarulhos - Download das receitas</h1>
 
       <Stack direction='row' spacing='2'>
         {files.map((file) => (

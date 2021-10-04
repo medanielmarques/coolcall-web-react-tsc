@@ -14,7 +14,7 @@ export function Header() {
             </a>
           </li>
           <li>
-            <a href=''>Home</a>
+            <a href='/portais'>Home</a>
           </li>
         </ul>
       </nav>

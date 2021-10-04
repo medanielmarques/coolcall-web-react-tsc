@@ -27,8 +27,7 @@ export function ReceitasHome() {
       })
       .then(() => {
         setIsFetchingData(false);
-
-        window.location.href = `../receitas/download`;
+        window.location.href = `../guarulhos/receitas/download`;
       });
   }
 

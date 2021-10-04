@@ -1,0 +1,10 @@
+.portais {
+  margin: 0 auto;
+  width: 50%;
+
+  .lista {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(265px, 1fr));
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "files": [
+    {
+      "label": "PDF",
+      "link": "http://localhost:3333/files/guarulhos/despesas/Despesas.pdf"
+    },
+    {
+      "label": "TXT",
+      "link": "http://localhost:3333/files/guarulhos/despesas/relatorio.txt"
+    },
+    {
+      "label": "CSV",
+      "link": "http://localhost:3333/files/guarulhos/despesas/relatorio.csv"
+    },
+    {
+      "label": "ODT",
+      "link": "http://localhost:3333/files/guarulhos/despesas/relatorio.odt"
+    },
+    {
+      "label": "ODF",
+      "link": "http://localhost:3333/files/guarulhos/despesas/relatorio.odf"
+    },
+    {
+      "label": "ODS",
+      "link": "http://localhost:3333/files/guarulhos/despesas/relatorio.ods"
+    }
+  ]
+}

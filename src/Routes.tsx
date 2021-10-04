@@ -1,13 +1,18 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Receitas } from './pages/Receitas';
-import { Download } from './pages/Download';
+import { ReceitasHome } from 'pages/Guarulhos/ReceitasHome';
+import { ReceitasDownload } from 'pages/Guarulhos/ReceitasDownload';
+import { Home } from 'pages/Home';
 
 export function Routes() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path='/' component={Receitas} />
-        <Route path='/download/:id/:municipio' component={Download} />
+        <Route exact path='/' component={Home} />
+        <Route path='/guarulhos/receitas/home' component={ReceitasHome} />
+        <Route
+          path='/guarulhos/receitas/download'
+          component={ReceitasDownload}
+        />
       </Switch>
     </BrowserRouter>
   );

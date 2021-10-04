@@ -1,0 +1,52 @@
+.container {
+  width: 100%;
+
+  .content {
+    width: 1525px;
+    height: 830px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 850px;
+      height: 625px;
+    }
+
+    .about {
+      width: 575px;
+      text-align: center;
+
+      h1 {
+        font-size: 65px;
+        line-height: 63px;
+        font-weight: bold;
+        color: #f55e61;
+      }
+
+      .description {
+        margin: 40px 0;
+      }
+
+      p {
+        font-size: 27px;
+        font-weight: 500;
+        line-height: 152.3%;
+        margin-top: 25px;
+      }
+
+      button {
+        color: #fff;
+        background-color: #f55e61;
+        font-size: 23px;
+        width: 100%;
+        height: 67.5px;
+
+        &:hover {
+          background-color: #ec3a3d;
+        }
+      }
+    }
+  }
+}

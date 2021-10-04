@@ -31,6 +31,22 @@
     {
       "id": "8",
       "label": "Agosto"
+    },
+    {
+      "id": "9",
+      "label": "Setembro"
+    },
+    {
+      "id": "10",
+      "label": "Outubro"
+    },
+    {
+      "id": "11",
+      "label": "Novembro"
+    },
+    {
+      "id": "12",
+      "label": "Dezembro"
     }
   ],
   "mes_final": [
@@ -65,6 +81,22 @@
     {
       "id": "8",
       "label": "Agosto"
+    },
+    {
+      "id": "9",
+      "label": "Setembro"
+    },
+    {
+      "id": "10",
+      "label": "Outubro"
+    },
+    {
+      "id": "11",
+      "label": "Novembro"
+    },
+    {
+      "id": "12",
+      "label": "Dezembro"
     }
   ],
   "quebras": [

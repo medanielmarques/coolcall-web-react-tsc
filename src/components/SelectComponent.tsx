@@ -25,11 +25,14 @@ export function SelectComponent(props: Props) {
         onChange={handleChange}
         placeholder={placeholder}
         icon={<MdArrowDropDown />}
-        backgroundColor='#1a202c'
+        backgroundColor='#4d5c77'
+        color='#fff'
         w='100%'
       >
         {itens.map((item) => (
-          <option value={item.id}>{item.label}</option>
+          <option key={item.id} value={item.id}>
+            {item.label}
+          </option>
         ))}
       </Select>
     </div>

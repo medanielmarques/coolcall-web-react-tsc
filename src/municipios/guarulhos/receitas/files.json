@@ -1,0 +1,28 @@
+{
+  "files": [
+    {
+      "label": "PDF",
+      "link": "http://localhost:3333/files/guarulhos/receitas/Receitas.pdf"
+    },
+    {
+      "label": "TXT",
+      "link": "http://localhost:3333/files/guarulhos/receitas/relatorio.txt"
+    },
+    {
+      "label": "CSV",
+      "link": "http://localhost:3333/files/guarulhos/receitas/relatorio.csv"
+    },
+    {
+      "label": "ODT",
+      "link": "http://localhost:3333/files/guarulhos/receitas/relatorio.odt"
+    },
+    {
+      "label": "ODF",
+      "link": "http://localhost:3333/files/guarulhos/receitas/relatorio.odf"
+    },
+    {
+      "label": "ODS",
+      "link": "http://localhost:3333/files/guarulhos/receitas/relatorio.ods"
+    }
+  ]
+}

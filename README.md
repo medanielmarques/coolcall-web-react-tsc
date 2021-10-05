@@ -9,8 +9,16 @@
  <img alt="tutorial" title="tutorial" src=".github/imagem-tutorial.png" width="500px" />
 
 - ##### Você deve criar um arquivo .json no frontend com todos os campos que você pegou do portal da transparência do seu município.
+
+ <img alt="tutorial" title="tutorial" src=".github/imagem-tutorial-2.png" width="250px" />
+
 - ##### Você deve criar os controllers, rotas e chamadas do crawler do seu município.
+
+<img alt="tutorial" title="tutorial" src=".github/imagem-tutorial-3.png" width="250px" />
+
 - ##### Você deve criar a estrutura HTML/JSX do seu município no frontend
+
+<img alt="tutorial" title="tutorial" src=".github/imagem-tutorial-4.png" width="250px" />
 
 ## Guia de instalação
 ```bash
